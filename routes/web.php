@@ -20,3 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'HomeController@about')->name('about');
+
+// Profile Routes
+Route::post('/profile', 'ProfileController@save')->name('save-profile');
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::get('/edit', 'ProfileController@edit')->name('edit-profile');
+
+// Product Routes
+Route::post('/product/update', 'ProductController@update')->name('update-product');
+Route::post('/product/create', 'ProductController@create')->name('create-product');
+Route::get('/product/list', 'ProductController@list')->name('product-list');
+Route::get('/product/new', 'ProductController@new')->name('new-product');
+Route::get('/product/edit/{id}', 'ProductController@edit')->name('edit-product');
+Route::get('/product/delete/{id}', 'ProductController@delete')->name('delete-product');
+Route::get('/product/{id}', 'ProductController@read')->name('view-product');

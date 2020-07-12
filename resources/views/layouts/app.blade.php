@@ -34,16 +34,16 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('Home') }}</a>
+                            <a class="nav-link" href="{{route('home')}}">{{ __('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('Products') }}</a>
+                            <a class="nav-link" href="{{route('product-list')}}">{{ __('Products') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('New Product') }}</a>
+                            <a class="nav-link" href="{{route('new-product')}}">{{ __('New Product') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ __('About') }}</a>
+                            <a class="nav-link" href="{{route('about')}}">{{ __('About') }}</a>
                         </li>
                     </ul>
 
@@ -66,6 +66,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('profile') }}">
+                                        {{ __('My Profile') }}
+                                    </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
