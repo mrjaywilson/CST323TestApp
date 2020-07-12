@@ -22,7 +22,7 @@
                                     <label for="street_address" class="col-sm-3 col-form-label text-sm-right">{{ __('Street') }}</label>
 
                                     <div class="col-md-9">
-                                        <input id="street_address" type="text" class="form-control" name="street_address" value="{{ old('street_address', $profile[0]->street_address) }}" autofocus>
+                                        <input id="street_address" type="text" class="form-control" name="street_address" value="{{ old('street_address', $profile->street_address) }}" autofocus>
                                     </div>
                                 </div>
 
@@ -30,7 +30,7 @@
                                     <label for="city" class="col-sm-3 col-form-label text-sm-right">{{ __('City') }}</label>
 
                                     <div class="col-md-9">
-                                        <input id="city" type="text" class="form-control" name="city" value="{{ old('city', $profile[0]->city) }}" autofocus>
+                                        <input id="city" type="text" class="form-control" name="city" value="{{ old('city', $profile->city) }}" autofocus>
                                     </div>
                                 </div>
 
@@ -38,7 +38,7 @@
                                     <label for="state" class="col-sm-3 col-form-label text-sm-right">{{ __('State') }}</label>
 
                                     <div class="col-md-9">
-                                        <input id="state" type="text" class="form-control" name="state" value="{{ old('state', $profile[0]->state) }}" autofocus>
+                                        <input id="state" type="text" class="form-control" name="state" value="{{ old('state', $profile->state) }}" autofocus>
                                     </div>
                                 </div>
 
@@ -46,7 +46,7 @@
                                     <label for="zipcode" class="col-sm-3 col-form-label text-sm-right">{{ __('Zip') }}</label>
 
                                     <div class="col-md-9">
-                                        <input id="zipcode" type="text" class="form-control" name="zipcode" value="{{ old('street_address', $profile[0]->zipcode) }}" autofocus>
+                                        <input id="zipcode" type="text" class="form-control" name="zipcode" value="{{ old('street_address', $profile->zipcode) }}" autofocus>
                                     </div>
                                 </div>
 

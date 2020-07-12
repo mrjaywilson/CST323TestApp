@@ -23,27 +23,23 @@
                         <hr />
 
                         <div class="row justify-content-center">
-                            @if($profile->isEmpty())
-                                <a class="btn btn-outline-dark" href="{{ route('edit-profile') }}">Add Profile Details</a>
-                            @else
                             <div class="col">
                                 <div class="row" style="padding-left: 25px">
-                                    Street: {{$profile[0]->street_address}}
+                                    Street: {{$profile->street_address}}
                                 </div>
                                 <div class="row" style="padding-left: 25px">
-                                    City: {{$profile[0]->city}}
+                                    City: {{$profile->city}}
                                 </div>
                                 <div class="row" style="padding-left: 25px">
-                                    State: {{$profile[0]->state}}
+                                    State: {{$profile->state}}
                                 </div>
                                 <div class="row" style="padding-left: 25px">
-                                    Zip: {{$profile[0]->zipcode}}
+                                    Zip: {{$profile->zipcode}}
                                 </div>
                                 <div>
-                                    <a class="btn btn-outline-dark" href="{{ route('edit-profile') }}">Edit Profile</a>
+                                    <a class="btn btn-outline-dark" href="{{ route('edit-profile') }}">Edit Profile Details</a>
                                 </div>
                             </div>
-                            @endif
                         </div>
                     </div>
                 </div>
